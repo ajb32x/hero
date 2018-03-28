@@ -1,0 +1,98 @@
+$navbar-height: 63px;
+
+$breakpoint-xs: 640px;
+$breakpoint-small: 1023px;
+$breakpoint-medium: 1219px;
+$breakpoint-large: 1439px;
+
+$container-width-small: 768px;
+$container-width-medium: 960px;
+$container-width-large: 1150px;
+
+$font-family: 'Roboto', sans-serif;
+
+// colors
+$body-background: #f8f8f8;
+$black: #111;
+$dark-black: #000;
+
+$gray: #777;
+$mid-gray: #666;
+$dark-gray: #555555;
+
+$very-white: #ffffff;
+$white: #fcfcfc;
+$almost-white: #f8f8f8;
+$white-border-color: #f0f0f0;
+$dark-white: #eaeaea;
+
+$blue: #0044ff;
+$dark-blue: #0033cc;
+
+$light-blue: #1166ff;
+$light-blue-translucent: rgba(17,102,255, 0.7);
+$input-border-focus-color: #6694E8;
+
+$green: #10a060;
+$dark-green: #098050;
+
+$red: #c03030;
+$dark-red: #902020;
+
+$orange: #f07000;
+$dark-orange: #e05000;
+$darker-orange: #c04000;
+
+$border-radius: 2px;
+
+$footer-background: #eeeeee;
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: $body-background;
+    font-family: $font-family;
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    font-size: 14px;
+    padding-bottom: 320px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+}
+
+a {
+    color: $blue;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: $dark-blue;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+ul.inline li {
+    display: inline;
+    margin-right: 15px;
+}
+
+p {
+    line-height: 24px;
+}
+
+strong {
+    font-weight: 500;
+}

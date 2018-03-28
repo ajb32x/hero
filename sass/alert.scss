@@ -1,0 +1,42 @@
+.alert {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 58px;
+}
+
+.card .alert {
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+}
+
+.alert.default {
+    background: $white;
+    border-top: 1px solid $white-border-color;
+    border-bottom: 1px solid $white-border-color;
+}
+
+.alert.success {
+    background: $green;
+}
+
+.alert.warn {
+    background: $orange;
+}
+
+.alert.primary {
+    background: $blue;
+}
+
+.alert.danger {
+    background: $red;
+}
+
+.alert.success,
+.alert.warn,
+.alert.primary,
+.alert.danger {
+    color: $white;
+}

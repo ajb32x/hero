@@ -1,0 +1,32 @@
+button.btn.icon-btn {
+    background: none;
+    border: none;
+    max-height: 21px;
+    font-size: 21px;
+    color: $dark-gray;
+    transition: color 0.3s ease;
+}
+
+.alert button.btn {
+    align-self: auto;
+}
+
+button.btn.icon-btn:hover {
+    color: $dark-black;
+}
+
+
+.alert.success button.btn,
+.alert.primary button.btn,
+.alert.warn button.btn,
+.alert.danger button.btn {
+    color: $dark-white;
+    color: rgba(255,255,255,0.8);
+}
+
+.alert.success button.btn:hover,
+.alert.primary button.btn:hover,
+.alert.warn button.btn:hover,
+.alert.danger button.btn:hover {
+    color: $white;
+}

@@ -1,0 +1,567 @@
+$navbar-height: 63px;
+
+$breakpoint-xs: 640px;
+$breakpoint-small: 1023px;
+$breakpoint-medium: 1219px;
+$breakpoint-large: 1439px;
+
+$container-width-small: 768px;
+$container-width-medium: 960px;
+$container-width-large: 1150px;
+
+$font-family: 'Roboto', sans-serif;
+
+// colors
+$body-background: #f8f8f8;
+$black: #111;
+$dark-black: #000;
+
+$gray: #777;
+$mid-gray: #666;
+$dark-gray: #555555;
+
+$very-white: #ffffff;
+$white: #fcfcfc;
+$almost-white: #f8f8f8;
+$white-border-color: #f0f0f0;
+$dark-white: #eaeaea;
+
+$blue: #0044ff;
+$dark-blue: #0033cc;
+
+$light-blue: #1166ff;
+$light-blue-translucent: rgba(17,102,255, 0.7);
+$input-border-focus-color: #6694E8;
+
+$green: #10a060;
+$dark-green: #098050;
+
+$red: #c03030;
+$dark-red: #902020;
+
+$orange: #f07000;
+$dark-orange: #e05000;
+$darker-orange: #c04000;
+
+$border-radius: 2px;
+
+$footer-background: #eeeeee;
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: $body-background;
+    font-family: $font-family;
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    font-size: 14px;
+    padding-bottom: 320px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+}
+
+a {
+    color: $blue;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: $dark-blue;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+ul.inline li {
+    display: inline;
+    margin-right: 15px;
+}
+
+p {
+    line-height: 24px;
+}
+
+strong {
+    font-weight: 500;
+}
+.alert {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 58px;
+}
+
+.card .alert {
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+}
+
+.alert.default {
+    background: $white;
+    border-top: 1px solid $white-border-color;
+    border-bottom: 1px solid $white-border-color;
+}
+
+.alert.success {
+    background: $green;
+}
+
+.alert.warn {
+    background: $orange;
+}
+
+.alert.primary {
+    background: $blue;
+}
+
+.alert.danger {
+    background: $red;
+}
+
+.alert.success,
+.alert.warn,
+.alert.primary,
+.alert.danger {
+    color: $white;
+}
+
+@import 'master';
+
+$card-padding: 20px;
+
+.card {
+    background: $very-white;
+    border-radius: $border-radius;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: $card-padding;
+    color: $black;
+}
+
+// .dark .card {
+//     background: #151515;
+//     color: #eee;
+// }
+
+.card .card-header {
+    background: $almost-white;
+    margin: -2rem;
+    padding: 2rem;
+    padding-bottom: 0rem;
+    border-bottom: 1px solid $white-border-color;
+    margin-bottom: 2rem;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}
+
+// .dark .card .card-header {
+//     background: #aaa;
+//     border-bottom: none;
+// }
+.container {
+    padding: 10px 5px;
+    max-width: $breakpoint-xs;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+@media (min-width: $breakpoint-small) {
+    .container {
+        padding: 10px 15px;
+        max-width: $container-width-small;
+    }
+}
+
+@media (min-width: $breakpoint-medium) {
+    .container {
+        max-width: $container-width-medium;
+    }
+}
+
+@media (min-width: $breakpoint-large) {
+    .container {
+        max-width: $container-width-large;
+    }
+}
+
+
+.footer {
+    background: $footer-background;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: $black;
+    font-size: 14px;
+ }
+
+.footer.dark {
+    background: #222;
+    color: #555;
+}
+
+.footer .container {
+    padding: 0 20px;
+}
+
+.footer-title {
+    padding-bottom: 2rem;
+    font-size: 18px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: $gray;
+}
+
+.footer a:hover {
+    color: #222;
+}
+button.btn.icon-btn {
+    background: none;
+    border: none;
+    max-height: 21px;
+    font-size: 21px;
+    color: $dark-gray;
+    transition: color 0.3s ease;
+}
+
+.alert button.btn {
+    align-self: auto;
+}
+
+button.btn.icon-btn:hover {
+    color: $dark-black;
+}
+
+
+.alert.success button.btn,
+.alert.primary button.btn,
+.alert.warn button.btn,
+.alert.danger button.btn {
+    color: $dark-white;
+    color: rgba(255,255,255,0.8);
+}
+
+.alert.success button.btn:hover,
+.alert.primary button.btn:hover,
+.alert.warn button.btn:hover,
+.alert.danger button.btn:hover {
+    color: $white;
+}
+
+@import 'master';
+
+$input-font-size: 14px;
+
+form .input-group {
+    margin: 10px 0;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+input {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    min-height: 40px;
+    border-radius: $border-radius;
+    font-size: $input-font-size;
+    transition: box-shadow 0.3s ease, border 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid $input-border-focus-color;
+    box-shadow: 0px 0px 2px 0px $light-blue;
+}
+
+.btn {
+    padding: 6px 12px;
+    min-height: 40px;
+    border-radius: $border-radius;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: background 0.2s ease;
+    font-size: $input-font-size;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.btn-default {
+    background: $white;
+}
+
+.btn.btn-default:hover {
+    background: $white-border-color;
+}
+
+.btn.btn-success,
+.btn.btn-primary,
+.btn.btn-warn,
+.btn.btn-danger, {
+    color: $white;
+}
+
+.btn.btn-success {
+    background: $green;
+}
+.btn.btn-success:hover {
+    background: $dark-green;
+}
+
+.btn.btn-primary {
+    background: $blue;
+}
+.btn.btn-primary:hover {
+    background: $dark-blue;
+}
+
+.btn.btn-warn {
+    background: $dark-orange;
+}
+.btn.btn-warn:hover {
+    background: $darker-orange;
+}
+
+.btn.btn-danger {
+    background: $red;
+}
+.btn.btn-danger:hover {
+    background: $dark-red;
+}
+navbar {
+    box-sizing: border-box;
+    min-height: 63px;
+    width: 100%;
+    display: block;
+    padding: 0 5px;
+}
+
+@media (min-width: $breakpoint-small) {
+    navbar {
+        padding: 0 10px;
+    }
+}
+navbar.light {
+    background: $very-white;
+    border-bottom: 1px solid $white-border-color;
+}
+
+navbar.dark {
+    background: $black;
+}
+
+navbar .brand {
+    margin-top: -2px;
+    font-size: 18px;
+}
+
+navbar > .container {
+    box-sizing: border-box;
+    padding-bottom: 0;
+    padding-top: 20px;
+    // padding-left: 5px;
+    // padding-right: 5px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+}
+
+navbar > .container a,
+nav-menu a {
+    color: $mid-gray;
+    text-decoration: none;
+}
+
+navbar > .container a:hover,
+nav-menu a:hover {
+    color: $dark-black;
+}
+
+navbar > .container a:not(:first-child) {
+    margin-left: 20px;
+}
+
+navbar > .container .nav-left {
+    margin-right: auto;
+}
+
+navbar > .container .nav-left,
+navbar > .container .nav-right {
+    align-items: baseline;
+    display: flex;
+}
+
+navbar button.h-bars {
+    // margin-top: -4px;
+    box-sizing: content-box;
+    // padding: 15px 8px;
+    padding: 0;
+    padding-bottom: 2px;
+    width: 62px;
+    height: 62px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: hand;
+    transition: background 0.3s ease;
+}
+navbar .container button.h-bars {
+    margin-right: -10px;
+}
+
+@media (min-width: $breakpoint-small) {
+    navbar .container button.h-bars {
+        margin-right: -5px;
+    }
+}
+
+navbar button.h-bars.always-display {
+    display: block;
+}
+
+navbar button.h-bars > div.bar {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: $mid-gray;
+    width: 12px;
+    height: 2px;
+    transition: background 0.3s ease;
+}
+
+navbar button.h-bars:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+navbar button.h-bars:hover > div.bar {
+    background: $black;
+}
+
+navbar button.h-bars > div.bar:first {
+    margin-top: 12px;
+}
+
+// navbar > button.h-bars > div.bar:last {
+
+// }
+
+navbar menu-container {
+    margin-top: -22px;
+}
+
+nav-menu {
+    box-sizing: border-box;
+    position: absolute;
+    max-height: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background: $very-white;
+    border: rgba(0,0,0,0) solid 1px;
+    padding: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
+    margin-top: -1px;
+    opacity: 0;
+    left: 0;
+}
+
+nav-menu.open {
+    max-height: 700px;
+    border: $white-border-color solid 1px;
+    border-top: none;
+    opacity: 1;
+    transition: opacity 0.1s, max-height 0.6s ease, padding 0.3s ease,;
+}
+
+nav-menu nav-menu-item,
+navbar .container nav-menu a.nav-menu-item,
+navbar nav-menu a.nav-menu-item,
+nav-menu button.nav-menu-item, {
+    display: block;
+    margin: 0;
+    min-height: 44px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+// nav-menu nav-menu-item,
+// navbar .container nav-menu a.nav-menu-item:hover,
+// navbar nav-menu a.nav-menu-item:hover,
+// nav-menu button.nav-menu-item:hover, {
+//     background: $almost-white;
+// }
+
+@media (min-width: $breakpoint-xs) {
+    navbar button.h-bars {
+        display: none;
+    }
+
+    nav-menu {
+        position: absolute;
+        float: right;
+        width: 320px;
+        margin-left: -256px;
+        max-width: 320px;
+        left: inherit;
+    }
+}
+@media (max-width: $breakpoint-xs) {
+    .hide-xs {
+        display: none;
+    }
+}
+
+@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-small) {
+    .hide-sm {
+        display: none;
+    }
+}
+
+@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+    .hide-md {
+        display: none;
+    }
+}
+
+@media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+    .hide-lg {
+        display: none;
+    }
+}
+
+@media (min-width: $breakpoint-large) {
+    .hide-xl {
+        display: none;
+    }
+}
+
+@media (min-width: $breakpoint-xs) {
+    .visible-xs {
+        display: none;
+    }
+}

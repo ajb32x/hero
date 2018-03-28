@@ -1,0 +1,35 @@
+.footer {
+    background: $footer-background;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: $black;
+    font-size: 14px;
+ }
+
+.footer.dark {
+    background: #222;
+    color: #555;
+}
+
+.footer .container {
+    padding: 0 20px;
+}
+
+.footer-title {
+    padding-bottom: 2rem;
+    font-size: 18px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: $gray;
+}
+
+.footer a:hover {
+    color: #222;
+}

@@ -1,0 +1,178 @@
+navbar {
+    box-sizing: border-box;
+    min-height: 63px;
+    width: 100%;
+    display: block;
+    padding: 0 5px;
+}
+
+@media (min-width: $breakpoint-small) {
+    navbar {
+        padding: 0 10px;
+    }
+}
+navbar.light {
+    background: $very-white;
+    border-bottom: 1px solid $white-border-color;
+}
+
+navbar.dark {
+    background: $black;
+}
+
+navbar .brand {
+    margin-top: -2px;
+    font-size: 18px;
+}
+
+navbar > .container {
+    box-sizing: border-box;
+    padding-bottom: 0;
+    padding-top: 20px;
+    // padding-left: 5px;
+    // padding-right: 5px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+}
+
+navbar > .container a,
+nav-menu a {
+    color: $mid-gray;
+    text-decoration: none;
+}
+
+navbar > .container a:hover,
+nav-menu a:hover {
+    color: $dark-black;
+}
+
+navbar > .container a:not(:first-child) {
+    margin-left: 20px;
+}
+
+navbar > .container .nav-left {
+    margin-right: auto;
+}
+
+navbar > .container .nav-left,
+navbar > .container .nav-right {
+    align-items: baseline;
+    display: flex;
+}
+
+navbar button.h-bars {
+    // margin-top: -4px;
+    box-sizing: content-box;
+    // padding: 15px 8px;
+    padding: 0;
+    padding-bottom: 2px;
+    width: 62px;
+    height: 62px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: hand;
+    transition: background 0.3s ease;
+}
+navbar .container button.h-bars {
+    margin-right: -10px;
+}
+
+@media (min-width: $breakpoint-small) {
+    navbar .container button.h-bars {
+        margin-right: -5px;
+    }
+}
+
+navbar button.h-bars.always-display {
+    display: block;
+}
+
+navbar button.h-bars > div.bar {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: $mid-gray;
+    width: 12px;
+    height: 2px;
+    transition: background 0.3s ease;
+}
+
+navbar button.h-bars:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+navbar button.h-bars:hover > div.bar {
+    background: $black;
+}
+
+navbar button.h-bars > div.bar:first {
+    margin-top: 12px;
+}
+
+// navbar > button.h-bars > div.bar:last {
+
+// }
+
+navbar menu-container {
+    margin-top: -22px;
+}
+
+nav-menu {
+    box-sizing: border-box;
+    position: absolute;
+    max-height: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background: $very-white;
+    border: rgba(0,0,0,0) solid 1px;
+    padding: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
+    margin-top: -1px;
+    opacity: 0;
+    left: 0;
+}
+
+nav-menu.open {
+    max-height: 700px;
+    border: $white-border-color solid 1px;
+    border-top: none;
+    opacity: 1;
+    transition: opacity 0.1s, max-height 0.6s ease, padding 0.3s ease,;
+}
+
+nav-menu nav-menu-item,
+navbar .container nav-menu a.nav-menu-item,
+navbar nav-menu a.nav-menu-item,
+nav-menu button.nav-menu-item, {
+    display: block;
+    margin: 0;
+    min-height: 44px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+// nav-menu nav-menu-item,
+// navbar .container nav-menu a.nav-menu-item:hover,
+// navbar nav-menu a.nav-menu-item:hover,
+// nav-menu button.nav-menu-item:hover, {
+//     background: $almost-white;
+// }
+
+@media (min-width: $breakpoint-xs) {
+    navbar button.h-bars {
+        display: none;
+    }
+
+    nav-menu {
+        position: absolute;
+        float: right;
+        width: 320px;
+        margin-left: -256px;
+        max-width: 320px;
+        left: inherit;
+    }
+}

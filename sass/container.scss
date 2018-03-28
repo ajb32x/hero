@@ -1,0 +1,27 @@
+.container {
+    padding: 10px 5px;
+    max-width: $breakpoint-xs;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+@media (min-width: $breakpoint-small) {
+    .container {
+        padding: 10px 15px;
+        max-width: $container-width-small;
+    }
+}
+
+@media (min-width: $breakpoint-medium) {
+    .container {
+        max-width: $container-width-medium;
+    }
+}
+
+@media (min-width: $breakpoint-large) {
+    .container {
+        max-width: $container-width-large;
+    }
+}
+

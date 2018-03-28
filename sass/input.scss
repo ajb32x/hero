@@ -1,0 +1,84 @@
+@import 'master';
+
+$input-font-size: 14px;
+
+form .input-group {
+    margin: 10px 0;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+input {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    min-height: 40px;
+    border-radius: $border-radius;
+    font-size: $input-font-size;
+    transition: box-shadow 0.3s ease, border 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid $input-border-focus-color;
+    box-shadow: 0px 0px 2px 0px $light-blue;
+}
+
+.btn {
+    padding: 6px 12px;
+    min-height: 40px;
+    border-radius: $border-radius;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: background 0.2s ease;
+    font-size: $input-font-size;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.btn-default {
+    background: $white;
+}
+
+.btn.btn-default:hover {
+    background: $white-border-color;
+}
+
+.btn.btn-success,
+.btn.btn-primary,
+.btn.btn-warn,
+.btn.btn-danger, {
+    color: $white;
+}
+
+.btn.btn-success {
+    background: $green;
+}
+.btn.btn-success:hover {
+    background: $dark-green;
+}
+
+.btn.btn-primary {
+    background: $blue;
+}
+.btn.btn-primary:hover {
+    background: $dark-blue;
+}
+
+.btn.btn-warn {
+    background: $dark-orange;
+}
+.btn.btn-warn:hover {
+    background: $darker-orange;
+}
+
+.btn.btn-danger {
+    background: $red;
+}
+.btn.btn-danger:hover {
+    background: $dark-red;
+}
