@@ -1,4 +1,3 @@
-
 const gulp = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
@@ -9,7 +8,7 @@ const uglify = require('gulp-uglifycss');
 const babel = require('gulp-babel');
 
 const paths = {
-    css: ['./build/**/*.css'],
+    css: ['./build/all-sass.css'],
     sass: ['./sass/_master.scss', './sass/**/*.scss', '!./sass/all-sass.scss'],
     dist: ['./dist/hero.css'],
     compiledAssets: ['./dist/**/*'],
@@ -26,15 +25,15 @@ gulp.task('concat-sass', function () {
             }
         }))
         .pipe(concat('all-sass.scss'))
-        .pipe(gulp.dest('./sass'));
+        .pipe(gulp.dest('./build'));
 });
 
 gulp.task('sass', function () {
-    runSequence('concat-sass', 'compile-sass');
+    return runSequence('concat-sass', 'compile-sass');
 });
 
 gulp.task('compile-sass', function () {
-    return gulp.src('./sass/all-sass.scss')
+    return gulp.src('./build/all-sass.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./build'));
 });
@@ -49,7 +48,7 @@ gulp.task('concat-css', function () {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('uglify', () => {
+gulp.task('uglify-css', () => {
     return gulp.src(paths.dist)
         .pipe(uglify({ 'uglyComments': true }))
         .pipe(concat('hero.min.css'))
@@ -81,6 +80,6 @@ gulp.task('default', function () {
     gulp.watch(paths.concatenatedScripts, ['translate-scripts']);
     gulp.watch(paths.css, ['concat-css']);
     gulp.watch(paths.sass, ['sass']);
-    gulp.watch(paths.dist, ['uglify']);
+    gulp.watch(paths.dist, ['uglify-css']);
     gulp.watch(paths.compiledAssets, ['copy-to-sampleApp']);
 });

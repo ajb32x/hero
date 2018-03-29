@@ -45,6 +45,8 @@ $darker-orange: #c04000;
 
 $border-radius: 2px;
 
+$brand-color: #42f;
+
 $footer-background: #eeeeee;
 
 html {
@@ -61,6 +63,11 @@ body {
     font-size: 14px;
     padding-bottom: 320px;
 }
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -137,8 +144,6 @@ strong {
 .alert.danger {
     color: $white;
 }
-
-@import 'master';
 
 $card-padding: 20px;
 
@@ -267,7 +272,6 @@ button.btn.icon-btn:hover {
     color: $white;
 }
 
-@import 'master';
 
 $input-font-size: 14px;
 
@@ -350,6 +354,102 @@ input:focus {
 }
 .btn.btn-danger:hover {
     background: $dark-red;
+}
+.h-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.h-row div {
+    display: flex;
+}
+
+.h-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.h-column.center,
+.h-row.center {
+    align-items: center;
+}
+
+.h-column .center {
+    align-self: center;
+}
+
+.h-row div {
+    padding: 0 15px;
+}
+
+div.col-xs-2 {
+    flex-basis: 50%;
+}
+
+div.col-xs-3 {
+    flex-basis: 33%;
+}
+
+div.col-xs-4 {
+    flex-basis: 25%;
+}
+
+@media(min-width: $breakpoint-small) {
+    div.col-sm-2 {
+        flex-basis: 50%;
+    }
+
+    div.col-sm-3 {
+        flex-basis: 33%;
+    }
+    
+    div.col-sm-4 {
+        flex-basis: 25%;
+    }
+}
+
+@media(min-width: $breakpoint-medium) {
+    div.col-md-2 {
+        flex-basis: 50%;
+    }
+
+    div.col-md-3 {
+        flex-basis: 33%;
+    }
+    
+    div.col-md-4 {
+        flex-basis: 25%;
+    }
+}
+
+@media(min-width: $breakpoint-large) {
+    div.col-lg-2 {
+        flex-basis: 50%;
+    }
+
+    div.col-lg-3 {
+        flex-basis: 33%;
+    }
+    
+    div.col-lg-4 {
+        flex-basis: 25%;
+    }
+}
+
+@media(min-width: $breakpoint-large) {
+    div.col-xl-2 {
+        flex-basis: 50%;
+    }
+
+    div.col-xl-3 {
+        flex-basis: 33%;
+    }
+    
+    div.col-xl-4 {
+        flex-basis: 25%;
+    }
 }
 navbar {
     box-sizing: border-box;
@@ -528,6 +628,47 @@ nav-menu button.nav-menu-item, {
         max-width: 320px;
         left: inherit;
     }
+}
+.panel {
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+}
+
+.panel.hero {
+    height: 660px;
+    max-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.panel.hero h1,
+.panel.hero h2,
+.panel.hero h3, {
+    font-size: 3.6em;
+}
+
+.panel.lg {
+    min-height: 440px;
+    font-size: 1.2em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panel.lg h1,
+.panel.lg h2,
+.panel.lg h3, {
+    font-size: 2.4em;
+}
+
+.panel.brand {
+    background: $brand-color;
+    color: $white;
+}
+
+.panel.hero .container {
+    padding: 0 20px;
 }
 @media (max-width: $breakpoint-xs) {
     .hide-xs {

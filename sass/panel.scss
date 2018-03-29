@@ -1,0 +1,41 @@
+.panel {
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+}
+
+.panel.hero {
+    height: 660px;
+    max-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.panel.hero h1,
+.panel.hero h2,
+.panel.hero h3, {
+    font-size: 3.6em;
+}
+
+.panel.lg {
+    min-height: 440px;
+    font-size: 1.2em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panel.lg h1,
+.panel.lg h2,
+.panel.lg h3, {
+    font-size: 2.4em;
+}
+
+.panel.brand {
+    background: $brand-color;
+    color: $white;
+}
+
+.panel.hero .container {
+    padding: 0 20px;
+}

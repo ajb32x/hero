@@ -45,6 +45,8 @@ $darker-orange: #c04000;
 
 $border-radius: 2px;
 
+$brand-color: #42f;
+
 $footer-background: #eeeeee;
 
 html {
@@ -61,6 +63,11 @@ body {
     font-size: 14px;
     padding-bottom: 320px;
 }
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 *, *:before, *:after {
     box-sizing: inherit;
