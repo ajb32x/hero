@@ -479,7 +479,9 @@ nav-menu {
   transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
   margin-top: -1px;
   opacity: 0;
-  left: 0; }
+  left: 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; }
 
 nav-menu.open {
   max-height: 700px;
