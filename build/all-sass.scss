@@ -515,6 +515,7 @@ navbar > .container .nav-right {
 }
 
 navbar button.h-bars {
+    display: block;
     // margin-top: -4px;
     box-sizing: content-box;
     // padding: 15px 8px;
@@ -538,9 +539,9 @@ navbar .container button.h-bars {
     }
 }
 
-navbar button.h-bars.always-display {
-    display: block;
-}
+// navbar button.h-bars.always-display {
+//     display: block;
+// }
 
 navbar button.h-bars > div.bar {
     margin-top: 2px;
@@ -618,9 +619,9 @@ nav-menu button.nav-menu-item, {
 // }
 
 @media (min-width: $breakpoint-xs) {
-    navbar button.h-bars {
-        display: none;
-    }
+    // navbar button.h-bars {
+    //     display: none;
+    // }
 
     nav-menu {
         position: absolute;
