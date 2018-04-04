@@ -498,5 +498,5 @@ nav-menu button.nav-menu-item {
     display: none; } }
 
 @media (min-width: 640px) {
-  .visible-xs {
+  .show-xs {
     display: none; } }
