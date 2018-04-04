@@ -403,6 +403,14 @@ navbar > .container a:hover,
 nav-menu a:hover {
   color: #000; }
 
+navbar.dark > .container a,
+nav-menu a {
+  color: #999; }
+
+navbar.dark > .container a:hover,
+nav-menu a:hover {
+  color: #fcfcfc; }
+
 navbar > .container a:not(:first-child) {
   margin-left: 20px; }
 
@@ -429,7 +437,7 @@ navbar button.h-bars {
   background: none;
   border: none;
   outline: none;
-  cursor: hand;
+  cursor: pointer;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease; }
 
@@ -456,6 +464,9 @@ navbar button.h-bars:hover {
 navbar button.h-bars:hover > div.bar {
   background: #111; }
 
+navbar.dark button.h-bars:hover > div.bar {
+  background: #fcfcfc; }
+
 navbar button.h-bars > div.bar:first {
   margin-top: 12px; }
 
@@ -481,6 +492,9 @@ nav-menu {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px; }
 
+navbar.dark nav-menu {
+  background: #111; }
+
 nav-menu.open {
   max-height: 700px;
   border: #f0f0f0 solid 1px;
@@ -488,6 +502,9 @@ nav-menu.open {
   opacity: 1;
   -webkit-transition: opacity 0.1s, max-height 0.6s ease, padding 0.3s ease;
   transition: opacity 0.1s, max-height 0.6s ease, padding 0.3s ease; }
+
+navbar.dark nav-menu.open {
+  border-color: #000; }
 
 nav-menu nav-menu-item,
 navbar .container nav-menu a.nav-menu-item,

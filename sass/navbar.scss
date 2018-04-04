@@ -47,6 +47,16 @@ nav-menu a:hover {
     color: $dark-black;
 }
 
+navbar.dark > .container a,
+nav-menu a {
+    color: $light-gray;
+}
+
+navbar.dark > .container a:hover,
+nav-menu a:hover {
+    color: $white;
+}
+
 navbar > .container a:not(:first-child) {
     margin-left: 20px;
 }
@@ -73,7 +83,7 @@ navbar button.h-bars {
     background: none;
     border: none;
     outline: none;
-    cursor: hand;
+    cursor: pointer;
     transition: background 0.3s ease;
 }
 navbar .container button.h-bars {
@@ -108,13 +118,13 @@ navbar button.h-bars:hover > div.bar {
     background: $black;
 }
 
+navbar.dark button.h-bars:hover > div.bar {
+    background: $white;
+}
+
 navbar button.h-bars > div.bar:first {
     margin-top: 12px;
 }
-
-// navbar > button.h-bars > div.bar:last {
-
-// }
 
 navbar menu-container {
     margin-top: -22px;
@@ -138,12 +148,20 @@ nav-menu {
     border-bottom-right-radius: $border-radius;
 }
 
+navbar.dark nav-menu {
+    background: $black;
+}
+
 nav-menu.open {
     max-height: 700px;
     border: $white-border-color solid 1px;
     border-top: none;
     opacity: 1;
     transition: opacity 0.1s, max-height 0.6s ease, padding 0.3s ease,;
+}
+
+navbar.dark nav-menu.open {
+    border-color: $dark-black;
 }
 
 nav-menu nav-menu-item,
