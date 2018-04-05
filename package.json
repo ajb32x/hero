@@ -1,18 +1,16 @@
 {
   "name": "herocss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple and elegant css framework.",
-  "main": "index.js",
-  "directories": {
-    "example": "examples",
-    "test": "test"
-  },
   "scripts": {
-    "dev": "http-server ./sampleApp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "http-server ./sampleApp"
   },
   "author": "Anthony Bell",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajb32x/hero.git"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",

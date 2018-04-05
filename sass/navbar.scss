@@ -48,12 +48,12 @@ nav-menu a:hover {
 }
 
 navbar.dark > .container a,
-nav-menu a {
+navbar.dark nav-menu a {
     color: $light-gray;
 }
 
 navbar.dark > .container a:hover,
-nav-menu a:hover {
+navbar.dark nav-menu a:hover {
     color: $white;
 }
 

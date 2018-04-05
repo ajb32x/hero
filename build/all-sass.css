@@ -343,11 +343,11 @@ nav-menu a:hover {
   color: #000; }
 
 navbar.dark > .container a,
-nav-menu a {
+navbar.dark nav-menu a {
   color: #999; }
 
 navbar.dark > .container a:hover,
-nav-menu a:hover {
+navbar.dark nav-menu a:hover {
   color: #fcfcfc; }
 
 navbar > .container a:not(:first-child) {
