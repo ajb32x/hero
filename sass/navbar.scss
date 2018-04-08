@@ -1,6 +1,6 @@
 navbar {
     box-sizing: border-box;
-    min-height: 63px;
+    min-height: $navbar-height;
     width: 100%;
     display: block;
     padding: 0 5px;
@@ -146,6 +146,7 @@ nav-menu {
     left: 0;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
+    top: $navbar-height;
 }
 
 navbar.dark nav-menu {

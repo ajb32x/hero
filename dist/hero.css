@@ -490,7 +490,8 @@ nav-menu {
   opacity: 0;
   left: 0;
   border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px; }
+  border-bottom-right-radius: 2px;
+  top: 63px; }
 
 navbar.dark nav-menu {
   background: #111; }
