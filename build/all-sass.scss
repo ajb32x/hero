@@ -722,7 +722,7 @@ nav-menu button.nav-menu-item, {
     }
 }
 
-@media (min-width: ($breakpoint-xs - 1)) {
+@media (min-width: ($breakpoint-xs + 1)) {
     .show-xs {
         display: none;
     }
