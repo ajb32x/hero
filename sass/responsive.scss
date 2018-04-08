@@ -28,7 +28,7 @@
     }
 }
 
-@media (min-width: $breakpoint-xs) {
+@media (min-width: ($breakpoint-xs - 1)) {
     .show-xs {
         display: none;
     }

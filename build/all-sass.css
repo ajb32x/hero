@@ -510,6 +510,6 @@ nav-menu button.nav-menu-item {
   .hide-xl {
     display: none; } }
 
-@media (min-width: 640px) {
+@media (min-width: 639px) {
   .show-xs {
     display: none; } }
