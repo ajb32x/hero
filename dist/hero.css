@@ -527,7 +527,7 @@ nav-menu button.nav-menu-item {
     position: absolute;
     float: right;
     width: 320px;
-    margin-left: -256px;
+    margin-left: -258px;
     max-width: 320px;
     left: inherit; } }
 
@@ -553,7 +553,9 @@ nav-menu button.nav-menu-item {
 .panel.hero h1,
 .panel.hero h2,
 .panel.hero h3 {
-  font-size: 3.6em; }
+  font-size: 3.6em;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .panel.lg {
   min-height: 440px;
