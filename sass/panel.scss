@@ -38,6 +38,15 @@
     color: $white;
 }
 
+.panel.dark {
+    background: $black;
+    color: $white;
+}
+
+.panel.default {
+    background: $dark-white;
+}
+
 .panel.hero .container {
     padding: 0 20px;
 }

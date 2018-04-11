@@ -577,6 +577,13 @@ nav-menu button.nav-menu-item {
   background: #42f;
   color: #fcfcfc; }
 
+.panel.dark {
+  background: #111;
+  color: #fcfcfc; }
+
+.panel.default {
+  background: #eaeaea; }
+
 .panel.hero .container {
   padding: 0 20px; }
 
