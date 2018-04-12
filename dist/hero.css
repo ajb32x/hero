@@ -47,6 +47,9 @@ p {
 strong {
   font-weight: 500; }
 
+small {
+  font-size: 85%; }
+
 .alert {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,6 +112,16 @@ strong {
   margin-bottom: 2rem;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px; }
+
+pre code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  background: #f8f8f8;
+  color: #666;
+  border: #eaeaea 1px solid;
+  border-radius: 2px; }
 
 .container {
   padding: 10px 5px;
@@ -197,10 +210,10 @@ form .input-group {
   font-weight: 500;
   margin-bottom: 4px; }
 
-input {
+input,
+textarea {
   padding: 6px 12px;
   border: 1px solid #ccc;
-  min-height: 40px;
   border-radius: 2px;
   font-size: 14px;
   -webkit-transition: border 0.2s ease, -webkit-box-shadow 0.3s ease;
@@ -533,7 +546,7 @@ nav-menu button.nav-menu-item {
 
 .panel {
   width: 100%;
-  min-height: 120px;
+  min-height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
