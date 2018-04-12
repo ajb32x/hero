@@ -15,7 +15,7 @@ input,
 textarea {
     padding: 6px 12px;
     border: 1px solid #ccc;
-    
+    min-height: 40px;
     border-radius: $border-radius;
     font-size: $input-font-size;
     transition: box-shadow 0.3s ease, border 0.2s ease;
