@@ -2,19 +2,22 @@
 
 (function () {
     window.onload = function () {
-        var els = Array.from(window.document.getElementsByClassName('h-bars'));
+        var els = Array.from(window.document.getElementsByTagName('menu-container'));
 
         els.forEach(function (e) {
             e.addEventListener('click', function (event) {
-                if (event.currentTarget && event.currentTarget.attributes) {
-                    var attributes = Array.from(event.currentTarget.attributes);
-                    attributes.every(function (attribute) {
-                        if (attribute.name !== 'menu') return true;
-
-                        var menu = document.getElementById(attribute.nodeValue);
-                        isOpen(menu) ? close(menu) : open(menu);
+                var childNodes = Array.from(event.currentTarget.childNodes);
+                childNodes.forEach(function (c) {
+                    if (!c.attributes) return;
+                    var button = Array.from(c.attributes).find(function (attribute) {
+                        return attribute.name === 'menu';
                     });
-                }
+
+                    if (button) {
+                        var menu = document.getElementById(button.nodeValue);
+                        isOpen(menu) ? close(menu) : open(menu);
+                    }
+                });
             });
         });
     };

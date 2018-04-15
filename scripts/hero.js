@@ -1,34 +1,37 @@
-(function() {
+(function () {
     window.onload = () => {
-        var els = Array.from(window.document.getElementsByClassName('h-bars'));
+        var els = Array.from(window.document.getElementsByTagName('menu-container'));
 
         els.forEach((e) => {
             e.addEventListener('click', (event) => {
-                if(event.currentTarget && event.currentTarget.attributes) {
-                    var attributes = Array.from(event.currentTarget.attributes);
-                    attributes.every((attribute) => {
-                        if(attribute.name !== 'menu') return true;
-
-                        var menu = document.getElementById(attribute.nodeValue);
-                        isOpen(menu) ? close(menu) : open(menu);
+                var childNodes = Array.from(event.currentTarget.childNodes);
+                childNodes.forEach((c) => {
+                    if (!c.attributes) return;
+                    var button = Array.from(c.attributes).find((attribute) => {
+                        return attribute.name === 'menu';
                     });
-                }
+
+                    if (button) {
+                        var menu = document.getElementById(button.nodeValue);
+                        isOpen(menu) ? close(menu) : open(menu);
+                    }
+                });
             });
         });
     };
 
-    function isOpen(el) {
-        if(!el || !el.className) return false;
+    function isOpen (el) {
+        if (!el || !el.className) return false;
 
         return el.className.indexOf('open') > -1;
     }
 
-    function open(el) {
+    function open (el) {
         el.previousClassName = el.className;
         el.className += ' open';
     }
 
-    function close(el) {
+    function close (el) {
         el.className = el.previousClassName;
     }
 })();

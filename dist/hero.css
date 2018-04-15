@@ -433,9 +433,9 @@ navbar > .container .nav-left {
 
 navbar > .container .nav-left,
 navbar > .container .nav-right {
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -454,13 +454,6 @@ navbar button.h-bars {
   cursor: pointer;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease; }
-
-navbar .container button.h-bars {
-  margin-right: -10px; }
-
-@media (min-width: 1023px) {
-  navbar .container button.h-bars {
-    margin-right: -5px; } }
 
 navbar button.h-bars > div.bar {
   margin-top: 2px;
@@ -485,12 +478,16 @@ navbar button.h-bars > div.bar:first {
   margin-top: 12px; }
 
 navbar menu-container {
-  margin-top: -22px; }
+  max-height: 62px;
+  overflow: visible;
+  display: block;
+  position: relative;
+  height: 62px; }
 
 nav-menu {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   max-height: 0;
   width: 100%;
   display: block;
@@ -500,12 +497,11 @@ nav-menu {
   padding: 0;
   -webkit-transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
   transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
-  margin-top: -1px;
   opacity: 0;
   left: 0;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  top: 63px; }
+  top: -2px; }
 
 navbar.dark nav-menu {
   background: #111; }
@@ -538,7 +534,6 @@ nav-menu button.nav-menu-item {
 
 @media (min-width: 640px) {
   nav-menu {
-    position: absolute;
     float: right;
     width: 320px;
     margin-left: -258px;

@@ -67,7 +67,7 @@ navbar > .container .nav-left {
 
 navbar > .container .nav-left,
 navbar > .container .nav-right {
-    align-items: baseline;
+    align-items: center;
     display: flex;
 }
 
@@ -86,15 +86,15 @@ navbar button.h-bars {
     cursor: pointer;
     transition: background 0.3s ease;
 }
-navbar .container button.h-bars {
-    margin-right: -10px;
-}
+// navbar .container button.h-bars {
+//     margin-right: -10px;
+// }
 
-@media (min-width: $breakpoint-small) {
-    navbar .container button.h-bars {
-        margin-right: -5px;
-    }
-}
+// @media (min-width: $breakpoint-small) {
+//     navbar .container button.h-bars {
+//         margin-right: -5px;
+//     }
+// }
 
 // navbar button.h-bars.always-display {
 //     display: block;
@@ -127,12 +127,18 @@ navbar button.h-bars > div.bar:first {
 }
 
 navbar menu-container {
-    margin-top: -22px;
+    // margin-top: -22px;
+    max-height: 62px;
+    overflow: visible;
+    display: block;
+    position: relative;
+    height: 62px;
+    // background: rgba(255,0,127,0.5);
 }
 
 nav-menu {
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     max-height: 0;
     width: 100%;
     display: block;
@@ -141,12 +147,13 @@ nav-menu {
     border: rgba(0,0,0,0) solid 1px;
     padding: 0;
     transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
-    margin-top: -1px;
+    // margin-top: -1px;
     opacity: 0;
     left: 0;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
-    top: $navbar-height;
+    // top: $navbar-height;
+    top: -2px;
 }
 
 navbar.dark nav-menu {
@@ -190,7 +197,7 @@ nav-menu button.nav-menu-item, {
     // }
 
     nav-menu {
-        position: absolute;
+        // position: absolute;
         float: right;
         width: 320px;
         margin-left: -258px;
