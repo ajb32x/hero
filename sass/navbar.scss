@@ -147,13 +147,12 @@ nav-menu {
     border: rgba(0,0,0,0) solid 1px;
     padding: 0;
     transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
-    // margin-top: -1px;
     opacity: 0;
     left: 0;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
-    // top: $navbar-height;
     top: -2px;
+    z-index: 1000;
 }
 
 navbar.dark nav-menu {
