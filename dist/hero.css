@@ -501,7 +501,8 @@ nav-menu {
   left: 0;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  top: -2px; }
+  top: -2px;
+  z-index: 1000; }
 
 navbar.dark nav-menu {
   background: #111; }
