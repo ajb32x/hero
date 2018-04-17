@@ -545,7 +545,8 @@ nav-menu button.nav-menu-item {
 @media (max-width: 639px) {
   nav-menu {
     right: calc(100vw - 62px);
-    width: 100vmin; } }
+    width: 100vmin;
+    padding-left: 15px; } }
 
 @media (min-width: 640px) {
   nav-menu {
