@@ -86,7 +86,7 @@ navbar button.h-bars {
     cursor: pointer;
     transition: background 0.3s ease;
 }
-navbar .container button.h-bars {
+navbar .container menu-container {
     margin-right: -10px;
 }
 
@@ -133,6 +133,7 @@ navbar menu-container {
     display: block;
     position: relative;
     height: 62px;
+    max-width: 62px;
     // background: rgba(255,0,127,0.5);
 }
 
@@ -148,7 +149,7 @@ nav-menu {
     padding: 0;
     transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
     opacity: 0;
-    left: 0;
+    // left: 0;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
     top: -2px;
@@ -189,6 +190,13 @@ nav-menu button.nav-menu-item, {
 // nav-menu button.nav-menu-item:hover, {
 //     background: $almost-white;
 // }
+
+@media(max-width: $breakpoint-xs - 1) {
+    nav-menu {
+        right: calc(100vw - 62px);
+        width: 100vmin;
+    }
+}
 
 @media (min-width: $breakpoint-xs) {
     // navbar button.h-bars {

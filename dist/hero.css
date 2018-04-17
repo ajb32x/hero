@@ -461,7 +461,7 @@ navbar button.h-bars {
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease; }
 
-navbar .container button.h-bars {
+navbar .container menu-container {
   margin-right: -10px; }
 
 navbar button.h-bars > div.bar {
@@ -491,7 +491,8 @@ navbar menu-container {
   overflow: visible;
   display: block;
   position: relative;
-  height: 62px; }
+  height: 62px;
+  max-width: 62px; }
 
 nav-menu {
   -webkit-box-sizing: border-box;
@@ -507,7 +508,6 @@ nav-menu {
   -webkit-transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
   transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
   opacity: 0;
-  left: 0;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   top: -2px;
@@ -541,6 +541,11 @@ nav-menu button.nav-menu-item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+@media (max-width: 639px) {
+  nav-menu {
+    right: calc(100vw - 62px);
+    width: 100vmin; } }
 
 @media (min-width: 640px) {
   nav-menu {
