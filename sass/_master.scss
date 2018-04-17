@@ -50,6 +50,13 @@ $brand-color: #42f;
 
 $footer-background: #eeeeee;
 
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 html {
     height: 100%;
     box-sizing: border-box;
