@@ -511,15 +511,15 @@ nav-menu {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   top: -2px;
-  z-index: 1000; }
+  z-index: 1000;
+  border: #f0f0f0 solid 1px;
+  border-top: none; }
 
 navbar.dark nav-menu {
   background: #111; }
 
 nav-menu.open {
   max-height: 700px;
-  border: #f0f0f0 solid 1px;
-  border-top: none;
   opacity: 1;
   -webkit-transition: opacity 0.1s, max-height 0.6s ease, padding 0.3s ease;
   transition: opacity 0.1s, max-height 0.6s ease, padding 0.3s ease; }

@@ -154,6 +154,8 @@ nav-menu {
     border-bottom-right-radius: $border-radius;
     top: -2px;
     z-index: 1000;
+    border: $white-border-color solid 1px;
+    border-top: none;
 }
 
 navbar.dark nav-menu {
@@ -162,10 +164,8 @@ navbar.dark nav-menu {
 
 nav-menu.open {
     max-height: 700px;
-    border: $white-border-color solid 1px;
-    border-top: none;
     opacity: 1;
-    transition: opacity 0.1s, max-height 0.6s ease, padding 0.3s ease,;
+    transition: opacity 0.1s, max-height 0.6s ease, padding 0.3s ease;
 }
 
 navbar.dark nav-menu.open {
