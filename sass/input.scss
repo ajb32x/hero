@@ -28,12 +28,14 @@ input:focus {
 }
 
 .btn {
+    display: inline-block;
     padding: 6px 12px;
     min-height: 40px;
     border-radius: $border-radius;
     border: 1px solid rgba(0,0,0,0.1);
     transition: background 0.2s ease;
     font-size: $input-font-size;
+    text-decoration: none;
 }
 
 .btn:hover {
