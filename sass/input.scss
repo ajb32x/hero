@@ -29,13 +29,15 @@ input:focus {
 
 .btn {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 9px 12px;
     min-height: 40px;
     border-radius: $border-radius;
     border: 1px solid rgba(0,0,0,0.1);
     transition: background 0.2s ease;
     font-size: $input-font-size;
     text-decoration: none;
+    vertical-align: middle;
+    line-height: 20px;
 }
 
 .btn:hover {
@@ -44,6 +46,7 @@ input:focus {
 
 .btn.btn-default {
     background: $white;
+    color: $black;
 }
 
 .btn.btn-default:hover {

@@ -236,20 +236,23 @@ input:focus {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 9px 12px;
   min-height: 40px;
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: background 0.2s ease;
   transition: background 0.2s ease;
   font-size: 14px;
-  text-decoration: none; }
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 20px; }
 
 .btn:hover {
   cursor: pointer; }
 
 .btn.btn-default {
-  background: #fcfcfc; }
+  background: #fcfcfc;
+  color: #111; }
 
 .btn.btn-default:hover {
   background: #f0f0f0; }
