@@ -568,18 +568,19 @@ nav-menu button.nav-menu-item {
   min-height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  height: auto;
+  padding: 20px 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .panel.hero {
-  height: 660px;
-  max-height: 100vh;
+  min-height: 660px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   font-size: 1.2em; }
 
 .panel.hero h1,
@@ -595,10 +596,7 @@ nav-menu button.nav-menu-item {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  flex-direction: column; }
 
 .panel.lg h1,
 .panel.lg h2,
@@ -615,6 +613,9 @@ nav-menu button.nav-menu-item {
 
 .panel.default {
   background: #eaeaea; }
+
+.panel.light {
+  background: #fcfcfc; }
 
 .panel.hero .container {
   padding: 0 20px; }
