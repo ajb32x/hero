@@ -16,9 +16,20 @@
 .panel.hero h1,
 .panel.hero h2,
 .panel.hero h3, {
-    font-size: 3.6em;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.panel.hero h1 {
+    font-size: 3.6em;
+}
+
+.panel.hero h2 {
+    font-size: 2.6em;
+}
+
+.panel.hero h3 {
+    font-size: 1.8em;
 }
 
 .panel.lg {
