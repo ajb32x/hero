@@ -29,7 +29,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-top: 1em;
-  margin-bottom: 0.4em; }
+  margin-bottom: 0.6em; }
 
 a {
   color: #0044ff;
@@ -50,7 +50,8 @@ ul.inline li {
   margin-right: 15px; }
 
 p {
-  line-height: 24px; }
+  line-height: 24px;
+  margin: 0 0 15px; }
 
 strong {
   font-weight: 500; }
@@ -583,9 +584,9 @@ nav-menu button.nav-menu-item {
   flex-direction: column;
   font-size: 1.2em; }
 
-.panel.hero h1,
-.panel.hero h2,
-.panel.hero h3 {
+.panel h1,
+.panel h2,
+.panel h3 {
   margin-top: 10px;
   margin-bottom: 10px; }
 
