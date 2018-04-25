@@ -606,10 +606,14 @@ nav-menu button.nav-menu-item {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-.panel.lg h1,
-.panel.lg h2,
-.panel.lg h3 {
+.panel.lg h1 {
   font-size: 2.4em; }
+
+.panel.lg h2 {
+  font-size: 1.8em; }
+
+.panel.lg h3 {
+  font-size: 1.5em; }
 
 .panel.brand {
   background: #42f;
