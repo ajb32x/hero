@@ -424,11 +424,14 @@ navbar > .container {
 
 navbar > .container a,
 nav-menu a {
-  color: #666;
   text-decoration: none; }
 
-navbar > .container a:hover,
-nav-menu a:hover {
+navbar.light > .container a,
+navbar.light nav-menu a {
+  color: #666; }
+
+navbar.light > .container a:hover,
+navbar.light nav-menu a:hover {
   color: #000; }
 
 navbar.dark > .container a,

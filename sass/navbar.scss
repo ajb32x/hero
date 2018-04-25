@@ -38,12 +38,16 @@ navbar > .container {
 
 navbar > .container a,
 nav-menu a {
-    color: $mid-gray;
     text-decoration: none;
 }
 
-navbar > .container a:hover,
-nav-menu a:hover {
+navbar.light > .container a,
+navbar.light nav-menu a {
+    color: $mid-gray;
+}
+
+navbar.light > .container a:hover,
+navbar.light nav-menu a:hover {
     color: $dark-black;
 }
 
