@@ -443,7 +443,7 @@ navbar.dark nav-menu a:hover {
   color: #fcfcfc; }
 
 navbar > .container a:not(:first-child) {
-  margin-left: 20px; }
+  margin-left: 30px; }
 
 navbar > .container .nav-left {
   margin-right: auto; }
