@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 }
 
-.h-row div {
+.h-row > div {
     display: flex;
 }
 
@@ -23,7 +23,7 @@
     align-self: center;
 }
 
-.h-row div {
+.h-row > div {
     padding: 0 15px;
 }
 

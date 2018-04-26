@@ -321,7 +321,7 @@ input:focus {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.h-row div {
+.h-row > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -348,7 +348,7 @@ input:focus {
   -ms-flex-item-align: center;
   align-self: center; }
 
-.h-row div {
+.h-row > div {
   padding: 0 15px; }
 
 div.col-xs-2 {
