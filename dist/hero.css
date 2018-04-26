@@ -233,7 +233,8 @@ button.btn.icon-btn:hover {
   color: #fcfcfc; }
 
 form .input-group {
-  margin: 10px 0; }
+  margin: 10px 0;
+  display: block; }
 
 .input-group label {
   display: block;
