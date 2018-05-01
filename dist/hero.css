@@ -66,6 +66,9 @@ ul {
   -moz-padding-start: 0;
   padding-inline-start: 0; }
 
+ul.inline {
+  padding-left: 0; }
+
 ul.inline li {
   display: inline;
   margin-right: 15px; }
@@ -242,7 +245,8 @@ form .input-group {
   margin-bottom: 4px; }
 
 input,
-textarea {
+textarea,
+select {
   padding: 6px 12px;
   border: 1px solid #ccc;
   min-height: 40px;
