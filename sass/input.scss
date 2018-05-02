@@ -46,7 +46,8 @@ input:focus {
     cursor: pointer;
 }
 
-.btn.btn-default {
+.btn.btn-default,
+a.btn-default {
     background: $white;
     color: $black;
 }
@@ -88,4 +89,20 @@ input:focus {
 }
 .btn.btn-danger:hover {
     background: $dark-red;
+}
+
+.btn-link {
+    border: none;
+    background: none;
+}
+
+.btn-link {
+    color: $blue;
+    transition: color 0.3s ease;
+    padding: 0;
+    min-height: inherit;
+}
+
+.btn-link:hover {
+    color: $dark-blue;
 }

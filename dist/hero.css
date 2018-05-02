@@ -279,7 +279,8 @@ input:focus {
 .btn:hover {
   cursor: pointer; }
 
-.btn.btn-default {
+.btn.btn-default,
+a.btn-default {
   background: #fcfcfc;
   color: #111; }
 
@@ -315,6 +316,20 @@ input:focus {
 
 .btn.btn-danger:hover {
   background: #902020; }
+
+.btn-link {
+  border: none;
+  background: none; }
+
+.btn-link {
+  color: #0044ff;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  padding: 0;
+  min-height: inherit; }
+
+.btn-link:hover {
+  color: #0033cc; }
 
 .h-row {
   display: -webkit-box;
