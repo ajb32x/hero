@@ -23,6 +23,12 @@ select {
     transition: box-shadow 0.3s ease, border 0.2s ease;
 }
 
+input:disabled,
+textarea:disabled,
+select:disabled {
+    background: $dark-white;
+}
+
 input:focus {
     outline: none;
     border: 1px solid $input-border-focus-color;
@@ -105,4 +111,15 @@ a.btn-default {
 
 .btn-link:hover {
     color: $dark-blue;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background: $dark-white;
+    color: $gray;
+}
+
+.btn:disabled:hover {
+    background: $dark-white;
+    color: $gray;
 }

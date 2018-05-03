@@ -259,6 +259,11 @@ select {
   transition: box-shadow 0.3s ease, border 0.2s ease;
   transition: box-shadow 0.3s ease, border 0.2s ease, -webkit-box-shadow 0.3s ease; }
 
+input:disabled,
+textarea:disabled,
+select:disabled {
+  background: #eaeaea; }
+
 input:focus {
   outline: none;
   border: 1px solid #6694E8;
@@ -332,6 +337,15 @@ a.btn-default {
 
 .btn-link:hover {
   color: #0033cc; }
+
+.btn:disabled {
+  cursor: not-allowed;
+  background: #eaeaea;
+  color: #777; }
+
+.btn:disabled:hover {
+  background: #eaeaea;
+  color: #777; }
 
 .h-row {
   display: -webkit-box;
