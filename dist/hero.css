@@ -106,6 +106,9 @@ small {
 .card > .alert:first-child {
   margin-top: -20px; }
 
+.card > .alert:last-child {
+  margin-bottom: -20px; }
+
 .alert.default {
   background: #fcfcfc;
   border-top: 1px solid #f0f0f0;
