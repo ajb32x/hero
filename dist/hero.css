@@ -134,15 +134,16 @@ small {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   padding: 20px;
-  color: #111; }
+  color: #111;
+  overflow: hidden; }
 
 .card .card-header {
   background: #f8f8f8;
-  margin: -2rem;
-  padding: 2rem;
+  margin: -20px;
+  padding: 20px;
   padding-bottom: 0rem;
   border-bottom: 1px solid #f0f0f0;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px; }
 

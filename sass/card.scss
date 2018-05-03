@@ -8,6 +8,7 @@ $card-padding: 20px;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     padding: $card-padding;
     color: $black;
+    overflow: hidden;
 }
 
 // .dark .card {
@@ -17,11 +18,11 @@ $card-padding: 20px;
 
 .card .card-header {
     background: $almost-white;
-    margin: -2rem;
-    padding: 2rem;
+    margin: -20px;
+    padding: 20px;
     padding-bottom: 0rem;
     border-bottom: 1px solid $white-border-color;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
 }
