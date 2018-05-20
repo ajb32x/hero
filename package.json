@@ -1,6 +1,6 @@
 {
   "name": "herocss",
-  "version": "0.2.28",
+  "version": "0.3.0",
   "description": "A simple and elegant css framework.",
   "scripts": {
     "dev": "http-server ./sampleApp -p 8081"

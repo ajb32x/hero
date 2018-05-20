@@ -132,6 +132,20 @@ small {
 .alert.danger {
   color: #fcfcfc; }
 
+.alert.success a,
+.alert.warn a,
+.alert.primary a,
+.alert.danger a {
+  color: #ffffff;
+  font-weight: 500; }
+
+.alert.success a:hover,
+.alert.warn a:hover,
+.alert.primary a:hover,
+.alert.danger a:hover {
+  color: #cccccc;
+  color: rgba(255, 255, 255, 0.7); }
+
 .card {
   background: #ffffff;
   border-radius: 2px;
