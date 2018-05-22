@@ -176,7 +176,9 @@ pre code {
   color: #666;
   border: #eaeaea 1px solid;
   border-radius: 2px;
-  font-size: inherit; }
+  font-size: inherit;
+  overflow-x: auto;
+  font-size: 14px; }
 
 .container {
   padding: 10px 5px;

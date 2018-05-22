@@ -53,6 +53,8 @@ $brand-color: #42f;
 
 $footer-background: #eeeeee;
 
+$body-font-size: 14px;
+
 html, body {
     width: 100%;
     margin: 0px;
@@ -71,7 +73,7 @@ body {
     position: relative;
     min-height: 100%;
     margin: 0;
-    font-size: 14px;
+    font-size: $body-font-size;
     padding-bottom: 320px;
 }
 
