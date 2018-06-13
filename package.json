@@ -1,6 +1,6 @@
 {
   "name": "herocss",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A simple and elegant css framework.",
   "scripts": {
     "dev": "http-server ./sampleApp -p 8081"
@@ -12,8 +12,8 @@
     "url": "https://github.com/ajb32x/hero.git"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^4.19.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
