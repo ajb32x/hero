@@ -64,9 +64,7 @@ ul {
   list-style-type: none;
   -webkit-padding-start: 0;
   -moz-padding-start: 0;
-  padding-inline-start: 0; 
-  padding-left: 0;
-}
+  padding-inline-start: 0; }
 
 ul.inline {
   padding-left: 0; }
@@ -379,6 +377,11 @@ a.btn-default {
   justify-content: space-around;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+
+.space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .h-row > div {
   display: -webkit-box;
