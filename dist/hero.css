@@ -749,3 +749,15 @@ address {
 @media (min-width: 641px) {
   .show-xs {
     display: none; } }
+
+.text-primary {
+  color: #0044ff; }
+
+.text-success {
+  color: #10a060; }
+
+.text-warn {
+  color: #f07000; }
+
+.text-danger {
+  color: #c03030; }
