@@ -1,5 +1,21 @@
 
 $input-font-size: 14px;
+$btn-lg-font-size: 16px;
+
+$default-background: $white;
+$default-background-hover: $white-border-color;
+
+$success-background: $green;
+$success-background-hover: $dark-green;
+
+$primary-background: $blue;
+$primary-background-hover: $dark-blue;
+
+$warn-background: $dark-orange;
+$warn-background-hover: $darker-orange;
+
+$danger-background: $red;
+$danger-background-hover: $dark-red;
 
 form .input-group {
     margin: 10px 0;
@@ -42,60 +58,73 @@ input:focus {
     height: 40px;
     border-radius: $border-radius;
     border: 1px solid rgba(0,0,0,0.1);
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, border 0.2s ease;
     font-size: $input-font-size;
     text-decoration: none;
     vertical-align: middle;
     line-height: 20px;
 }
 
+.btn-lg {
+    font-size: $btn-lg-font-size;
+    min-height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .btn:hover {
     cursor: pointer;
 }
 
+// button colors
+
 .btn.btn-default,
 a.btn-default {
-    background: $white;
+    background: $default-background;
     color: $black;
 }
 
 .btn.btn-default:hover {
-    background: $white-border-color;
+    background: $default-background-hover;
 }
 
 .btn.btn-success,
 .btn.btn-primary,
 .btn.btn-warn,
-.btn.btn-danger, {
+.btn.btn-danger,
+.btn.btn-success-ghost,
+.btn.btn-primary-ghost,
+.btn.btn-warn-ghost,
+.btn.btn-danger-ghost, {
     color: $white;
 }
 
 .btn.btn-success {
-    background: $green;
+    background: $success-background;
 }
 .btn.btn-success:hover {
-    background: $dark-green;
+    background: $success-background-hover;
 }
 
 .btn.btn-primary {
-    background: $blue;
+    background: $primary-background;
 }
 .btn.btn-primary:hover {
-    background: $dark-blue;
+    background: $primary-background-hover;
 }
 
 .btn.btn-warn {
-    background: $dark-orange;
+    background: $warn-background;
 }
 .btn.btn-warn:hover {
-    background: $darker-orange;
+    background: $warn-background-hover;
 }
 
 .btn.btn-danger {
-    background: $red;
+    background: $danger-background;
 }
 .btn.btn-danger:hover {
-    background: $dark-red;
+    background: $danger-background-hover;
 }
 
 .btn-link {
@@ -113,6 +142,54 @@ a.btn-default {
 .btn-link:hover {
     color: $dark-blue;
 }
+
+// ghost button
+
+// .btn.btn-default-ghost {
+//     background: none;
+//     border: 2px solid $default-background;
+// }
+
+// .btn.btn-default-ghost:hover {
+//     border: 2px solid $darker-white;
+// }
+
+.btn.btn-success-ghost {
+    background: none;
+    border: 2px solid $success-background;
+}
+
+.btn.btn-success-ghost:hover {
+    border: 2px solid $success-background-hover;
+}
+
+.btn.btn-primary-ghost {
+    background: none;
+    border: 2px solid $primary-background;
+}
+
+.btn.btn-primary-ghost:hover {
+    border: 2px solid $primary-background-hover;
+}
+
+.btn.btn-warn-ghost {
+    background: none;
+    border: 2px solid $warn-background;
+}
+
+.btn.btn-warn-ghost:hover {
+    border: 2px solid $warn-background-hover;
+}
+
+.btn.btn-danger-ghost {
+    background: none;
+    border: 2px solid $danger-background;
+}
+
+.btn.btn-danger-ghost:hover {
+    border: 2px solid $danger-background-hover;
+}
+
 
 .btn:disabled {
     cursor: not-allowed;

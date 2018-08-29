@@ -299,12 +299,18 @@ input:focus {
   height: 40px;
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-transition: background 0.2s ease;
-  transition: background 0.2s ease;
+  -webkit-transition: background 0.2s ease, border 0.2s ease;
+  transition: background 0.2s ease, border 0.2s ease;
   font-size: 14px;
   text-decoration: none;
   vertical-align: middle;
   line-height: 20px; }
+
+.btn-lg {
+  font-size: 16px;
+  min-height: 48px;
+  padding-left: 16px;
+  padding-right: 16px; }
 
 .btn:hover {
   cursor: pointer; }
@@ -320,7 +326,11 @@ a.btn-default {
 .btn.btn-success,
 .btn.btn-primary,
 .btn.btn-warn,
-.btn.btn-danger {
+.btn.btn-danger,
+.btn.btn-success-ghost,
+.btn.btn-primary-ghost,
+.btn.btn-warn-ghost,
+.btn.btn-danger-ghost {
   color: #fcfcfc; }
 
 .btn.btn-success {
@@ -360,6 +370,34 @@ a.btn-default {
 
 .btn-link:hover {
   color: #0033cc; }
+
+.btn.btn-success-ghost {
+  background: none;
+  border: 2px solid #10a060; }
+
+.btn.btn-success-ghost:hover {
+  border: 2px solid #098050; }
+
+.btn.btn-primary-ghost {
+  background: none;
+  border: 2px solid #0044ff; }
+
+.btn.btn-primary-ghost:hover {
+  border: 2px solid #0033cc; }
+
+.btn.btn-warn-ghost {
+  background: none;
+  border: 2px solid #e05000; }
+
+.btn.btn-warn-ghost:hover {
+  border: 2px solid #c04000; }
+
+.btn.btn-danger-ghost {
+  background: none;
+  border: 2px solid #c03030; }
+
+.btn.btn-danger-ghost:hover {
+  border: 2px solid #902020; }
 
 .btn:disabled {
   cursor: not-allowed;
@@ -601,7 +639,7 @@ nav-menu {
   display: block;
   overflow: hidden;
   background: #ffffff;
-  border: transparent solid 1px;
+  border: rgba(0, 0, 0, 0) solid 1px;
   padding: 0;
   -webkit-transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
   transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease 0.2s;
