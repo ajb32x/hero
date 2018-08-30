@@ -11,6 +11,15 @@
     width: calc(100% + 40px);
     margin-left: -20px;
     margin-right: -20px;
+    padding: 20px;
+}
+
+.card > .panel:first-child {
+    margin-top: -20px;
+}
+
+.card > .panel:last-child {
+    margin-bottom: -20px;
 }
 
 .panel.hero {

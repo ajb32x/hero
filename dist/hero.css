@@ -181,7 +181,6 @@ pre code {
   font-size: 14px; }
 
 .panel > pre {
-  padding: 0 20px;
   width: 100%; }
 
 code.dark {
@@ -715,7 +714,14 @@ nav-menu button.nav-menu-item {
 .card > .panel {
   width: calc(100% + 40px);
   margin-left: -20px;
-  margin-right: -20px; }
+  margin-right: -20px;
+  padding: 20px; }
+
+.card > .panel:first-child {
+  margin-top: -20px; }
+
+.card > .panel:last-child {
+  margin-bottom: -20px; }
 
 .panel.hero {
   min-height: 660px;
