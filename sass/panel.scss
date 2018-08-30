@@ -7,6 +7,12 @@
     justify-content: center;
 }
 
+.card > .panel {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
 .panel.hero {
     min-height: 660px;
     flex-direction: column;

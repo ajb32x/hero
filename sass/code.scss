@@ -9,3 +9,14 @@ pre code {
     overflow-x: auto;
     font-size: $body-font-size;
 }
+
+.panel > pre {
+    padding: 0 10px;
+    width: 100%;
+}
+
+code.dark {
+    background: #222324;
+    color: #ccc;
+    border: 1px solid #333435;
+}

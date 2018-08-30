@@ -180,6 +180,15 @@ pre code {
   overflow-x: auto;
   font-size: 14px; }
 
+.panel > pre {
+  padding: 0 10px;
+  width: 100%; }
+
+code.dark {
+  background: #222324;
+  color: #ccc;
+  border: 1px solid #333435; }
+
 .container {
   padding: 10px 5px;
   max-width: 640px;
@@ -702,6 +711,11 @@ nav-menu button.nav-menu-item {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+.card > .panel {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px; }
 
 .panel.hero {
   min-height: 660px;
