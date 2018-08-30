@@ -10,6 +10,7 @@
 
 .h-row > div {
     display: flex;
+    padding: 0 15px;
 }
 
 .h-column {
@@ -25,10 +26,6 @@
 
 .h-column .center {
     align-self: center;
-}
-
-.h-row > div {
-    padding: 0 15px;
 }
 
 div.col-xs-2 {
