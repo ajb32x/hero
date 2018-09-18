@@ -557,20 +557,20 @@ navbar > .container a,
 nav-menu a {
   text-decoration: none; }
 
-navbar.light > .container a,
-navbar.light nav-menu a {
+navbar.light > .container a:not(.btn),
+navbar.light nav-menu a:not(.btn) {
   color: #666; }
 
-navbar.light > .container a:hover,
-navbar.light nav-menu a:hover {
+navbar.light > .container a:hover:not(.btn),
+navbar.light nav-menu a:hover:not(.btn) {
   color: #000; }
 
-navbar.dark > .container a,
-navbar.dark nav-menu a {
+navbar.dark > .container a:not(.btn),
+navbar.dark nav-menu a:not(.btn) {
   color: #999; }
 
-navbar.dark > .container a:hover,
-navbar.dark nav-menu a:hover {
+navbar.dark > .container a:hover:not(.btn),
+navbar.dark nav-menu a:hover:not(.btn) {
   color: #fcfcfc; }
 
 navbar > .container a:not(:first-child) {
