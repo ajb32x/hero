@@ -292,8 +292,8 @@ select {
 input:disabled,
 textarea:disabled,
 select:disabled,
-input:readonly,
-textarea:readonly {
+input[readonly],
+textarea[readonly] {
   background: #eaeaea; }
 
 input:focus {
