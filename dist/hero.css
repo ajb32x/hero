@@ -98,7 +98,7 @@ small {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 60px; }
+  min-height: 60px; }
 
 .card .alert {
   margin: 0 -20px; }
