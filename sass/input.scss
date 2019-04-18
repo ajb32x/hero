@@ -47,7 +47,7 @@ textarea[readonly] {
     background: $dark-white;
 }
 
-input:focus {
+input:not([type='range']):focus {
     outline: none;
     border: 1px solid $input-border-focus-color;
     box-shadow: 0px 0px 2px 0px $light-blue;
