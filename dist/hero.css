@@ -301,7 +301,8 @@ input[readonly],
 textarea[readonly] {
   background: #eaeaea; }
 
-input:not([type='range']):focus {
+input:not([type='range']):focus,
+textarea:focus {
   outline: none;
   border: 1px solid #6694E8;
   -webkit-box-shadow: 0px 0px 2px 0px #1166ff;
